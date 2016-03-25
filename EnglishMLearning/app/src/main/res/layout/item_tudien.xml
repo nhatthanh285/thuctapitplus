@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tudien_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tudien_tu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="từ"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  "
+             />
+        <TextView
+            android:id="@+id/tudien_loaitu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="từ loại:"
+            android:textColor="#0004FF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  " />
+        <TextView
+            android:id="@+id/tudien_phienam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phiên âm"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FF0000"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tudien_dichnghia"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="dịch nghĩa"
+        android:textColor="#000099" />
+
+
+        <Button
+            android:id="@+id/tudien_phatam"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/btn_style_phatam" />
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nguphap">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Thì hiện tại đơn (Simple present)"
+        android:id="@+id/textViewTenThi"
+        android:layout_marginTop="40dp"
+        android:textColor="#0004FF"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewSTT"
+        android:layout_toEndOf="@+id/textViewSTT" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1:"
+        android:textColor="#0004FF"
+        android:id="@+id/textViewSTT"
+        android:layout_alignTop="@+id/textViewTenThi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="S + Vs/es + O (Đối với động từ Tobe)"
+        android:id="@+id/textViewCongthuc"
+        android:textColor="#FF0000"
+        android:layout_below="@+id/textViewTenThi"
+        android:layout_toRightOf="@+id/textViewSTT"
+        android:layout_toEndOf="@+id/textViewSTT"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dấu hiệu nhận biết Dấu hiệu nhận biết Dấu hiệu nhận biết Dấu hiệu nhận biết Dấu hiệu nhận biết Dấu hiệu nhận biết Dấu hiệu nhận biết"
+        android:id="@+id/textViewDauhhieu"
+        android:textColor="#191970"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textViewCongthuc"
+        android:layout_alignLeft="@+id/textViewCongthuc"
+        android:layout_alignStart="@+id/textViewCongthuc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Chi tiết"
+        android:textColor="#0004FF"
+        android:textStyle="italic"
+        android:id="@+id/textViewChitiet"
+        android:layout_below="@+id/textViewCongthuc"
+        android:layout_alignLeft="@+id/textViewDauhhieu"
+        android:layout_alignStart="@+id/textViewDauhhieu"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+</RelativeLayout>

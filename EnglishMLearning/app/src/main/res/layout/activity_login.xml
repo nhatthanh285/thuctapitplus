@@ -1,0 +1,85 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/hd"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Tên đăng nhập"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Mật khẩu"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi nhớ tài khoản"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_style_login"
+        android:id="@+id/btndangnhap"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_style_quen_mat_khau"
+        android:id="@+id/btnquenmatkhau"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/btndangnhap"
+        android:layout_alignLeft="@+id/btndangnhap"
+        android:layout_alignStart="@+id/btndangnhap" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_style_dang_ki"
+        android:id="@+id/button3"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/btnquenmatkhau"
+        android:layout_alignLeft="@+id/btnquenmatkhau"
+        android:layout_alignStart="@+id/btnquenmatkhau" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_style_thoat"
+        android:id="@+id/btnthoat"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+</RelativeLayout>
